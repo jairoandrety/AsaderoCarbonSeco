@@ -1,0 +1,226 @@
+
+
+/*#region StyleFonts*/
+@font-face { font-family: BebasNeue-Regular; src: url(Fonts/BebasNeue-Regular.ttf); }
+
+/*#endregion*/
+
+h1 {
+    font-family: BebasNeue;
+    color: #ddcfcc;
+    outline-offset: 10px;
+    outline: #8a2625;
+    outline-width: 100px;
+}
+
+h2 {
+    color: #ddcfcc;
+    outline: #8a2625;
+    outline-width: 100px;
+}
+
+body {
+    background-color: #1d1819;
+}
+
+    .LogoHome {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu ul {
+        padding: 0;
+        display: flex;
+        width: 100%;
+    }
+    
+    #menu ImgLogo {       
+         display: none;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+    }   
+
+@media (max-width: 800px) {
+    .LogoHome {
+        display: none;
+    }
+    
+    #menu ul {
+        display: flex;
+        width: 100%;
+    }
+
+    #menu ImgLogo {
+        display: flex;
+        width: 30%;
+    }    
+}
+
+#menu li
+{
+    display: inline-flex;
+    padding: 5px;
+    margin-inline: 5px;
+    width: 100%;
+    background-color: #311e13;
+
+    border-left: 4px solid #8e2320;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 0px 1px 1px #311e13;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#menu a
+{    
+    /*#region Text*/
+    color: #ffffff;
+    text-align: center;
+    text-decoration:none;
+    font-family: BebasNeue-Regular;
+    font-size: 20px;
+    /*#endregion*/
+}
+
+#menu a:hover
+{
+    color: #8e2320;
+}
+
+/*#region Classes*/
+.HorizontalContent
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.HorizontalContent .PanelHome {
+    flex: 50%;
+    margin: 5px;;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+@media (max-width: 800px){
+    .HorizontalContent
+    {
+        flex-direction: column;
+    }
+}
+
+.PanelHome .PanelHomeHeader > div {
+    margin: 10px;
+    background-color: #8e2320;
+}
+
+.HorizontalContent .panel-footer > a {
+    text-decoration: none;
+    color: #141414;
+}
+
+.HorizontalContent .panel-footer > a:hover {
+    text-decoration: none;
+    color: #8e2320;
+}
+
+.HorizontalContent .PanelHomeHeader {
+    width: 100%;
+    background-color: #8e2320;
+}
+
+#lol {
+    width: 100%;
+}
+
+#logo {
+    text-align: center;
+}
+
+.ImageContent{
+    margin-inline: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    background-image: linear-gradient(#00000000, #1d1819), url("Images/PolloAsado.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+/*#region Gallery*/
+.GridGallery
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    min-height: 100vh;
+}
+
+.GridGallery .Gallery
+{   
+    width: 750px;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.GridGallery .Gallery .img-a
+{
+    background-color: #311e13;
+    grid-column: 1/3;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.GridGallery .Gallery .img-b
+{
+    background-color: #311e13;
+    grid-row: 2/4;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.GridGallery .Gallery .img-c
+{
+    background-color: #311e13;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.GridGallery .Gallery .img-d
+{
+    background-color: #311e13;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.GridGallery .Gallery .img-e
+{
+    background-color: #311e13;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.GridGallery .Gallery .img-f
+{
+    background-color: #311e13;
+    grid-column: 2/4;
+    border-radius: 5px;
+    margin: 5px;
+}
+/*#endregion*/
+
+
+/*#endregion*/
