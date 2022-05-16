@@ -21,80 +21,86 @@ h2 {
 
 body {
     background-color: #1d1819;
+    margin: 0;
+    padding: 0;
 }
 
-    .LogoHome {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
+.LogoHome {
+    padding: 10px;
+    flex-direction: row;
+    flex: 100%;
 
-    #menu ul {
-        padding: 0;
-        display: flex;
-        width: 100%;
-    }
-    
-    #menu ImgLogo {       
-         display: none;
-         width: 100%;
-         justify-content: center;
-         align-items: center;
-    }   
-
-@media (max-width: 800px) {
-    .LogoHome {
-        display: none;
-    }
-    
-    #menu ul {
-        display: flex;
-        width: 100%;
-    }
-
-    #menu ImgLogo {
-        display: flex;
-        width: 30%;
-    }    
-}
-
-#menu li
-{
-    display: inline-flex;
-    padding: 5px;
-    margin-inline: 5px;
-    width: 100%;
-    background-color: #311e13;
-
-    border-left: 4px solid #8e2320;
-    border-radius: 0 2px 2px 0;
-    box-shadow: 0px 1px 1px #311e13;
-
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-}
-
-#menu a
-{    
-    /*#region Text*/
-    color: #ffffff;
     text-align: center;
-    text-decoration:none;
+    align-items: center;
+    align-content: center;
+}
+
+.LogoHome > img
+{
+    height: 150px;
+    width: auto;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #291c17;
+}
+
+#menu ImgLogo {       
+    width: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+}   
+
+#menu li{
+    display: inline-flex;
+}
+
+#menu li a {    
+    width: 100%;
+    display: flex;
+    color: #ddcfcc;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+
+    /*#region Text*/
     font-family: BebasNeue-Regular;
     font-size: 20px;
     /*#endregion*/
 }
 
-#menu a:hover
-{
-    color: #8e2320;
+#menu li img {    
+    height: 1%;
+    width: 1%;
+    padding: 14px 16px;
+    display: flex;
+}
+
+#menu li a:hover{
+    color: #8a2620;
+    background-color: #1d1819;
+    border-left: 3px solid #8e2320;
+    margin-left: -3px;
+}
+
+
+@media (max-width: 800px) {
+    /*.LogoHome {
+        display: none;
+    }*/
+
+    #menu ImgLogo {
+        display: none;
+    }    
 }
 
 /*#region Classes*/
-.HorizontalContent
-{
+.HorizontalContent{
     display: flex;
     flex-direction: row;
 }
@@ -103,7 +109,7 @@ body {
     flex: 50%;
     margin: 5px;;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #ddcfcc;
 }
 
 @media (max-width: 800px){
@@ -222,5 +228,37 @@ body {
 }
 /*#endregion*/
 
+/*#region ResponsiveGallery*/
+.ResponsiveGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ResponsiveGallery .column{
+    margin: 0.25%;
+    flex: 24.5%;
+    max-width: 24.5%;
+}
+
+.ResponsiveGallery .column > img{
+    margin: 5px;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    .ResponsiveGallery .column {
+        margin: 0.25%;
+        flex: 49%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .ResponsiveGallery .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+/*#endregion*/
 
 /*#endregion*/
