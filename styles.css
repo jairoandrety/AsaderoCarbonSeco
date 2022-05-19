@@ -145,13 +145,16 @@ h3 {
 }
 
 .PanelDeliveryInfo .DeliveyButtom> a{
-
     text-decoration: none;
     font-family: BebasNeue-Regular;
     color: #ddcfcc;
 }
 
-
+.Map{
+    max-width: 1000px;
+    margin: 10px auto;   
+    display: flex;
+}
 
 .HorizontalContent{
     max-width: 1000px;
