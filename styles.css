@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+    size-adjust: true;
     font-family: BebasNeue-Regular;
     color: #ddcfcc;
 }
@@ -21,6 +22,14 @@ h2 {
 h3 {
     font-family: BebasNeue-Regular;
     color: #8e2320;
+}
+
+p {
+    font-family: Tahoma;
+}
+
+a {
+    font-family: Tahoma;
 }
 
 .LogoHome {
@@ -87,7 +96,6 @@ h3 {
     margin-left: -3px;
 }
 
-
 @media (max-width: 1000px) {
     /*.LogoHome {
         display: none;
@@ -115,6 +123,18 @@ h3 {
     text-align: center;
 }
 
+.MenuImage{
+    max-width: 1000px;
+    margin: 10px auto;   
+    display: flex;
+}
+
+.MenuImage > img{
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
 .PanelDeliveryInfo{
     max-width: 1000px;
     margin: 10px auto;   
@@ -137,11 +157,9 @@ h3 {
     height: 100%;
 
     margin: 5px;
-
     padding: 5px 10px;
-
     margin-left: auto;
-
+    text-align: center;
 }
 
 .PanelDeliveryInfo .DeliveyButtom> a{
@@ -149,6 +167,56 @@ h3 {
     font-family: BebasNeue-Regular;
     color: #ddcfcc;
 }
+
+/*#region ResponsiveGallery*/
+.SetOrder{
+    max-width: 1000px;
+    margin: 10px auto;   
+    display: flex;
+
+    background-color: #ddcfcc; 
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.SetOrder > form {
+    margin: 10px auto;   
+    display: inline-block;
+
+
+}
+
+.SetOrder>form .FormSection >input{
+
+    background-color: #1d1819;
+    color: #ddcfcc;
+    font-family: Tahoma;
+    padding: 10px;
+}
+
+.SetOrder > form .FormSection{
+    font-size: 20px;
+    text-decoration: none;
+    font-family: BebasNeue-Regular;
+}
+
+.SetOrder >form > input{
+    background-color: #8e2320;
+    color: #ddcfcc;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: BebasNeue-Regular;
+
+    height: 100%;
+
+    margin: 5px;
+    padding: 5px 10px;
+    margin-left: auto;
+    text-align: center;
+}
+
+/*#endregion*/
 
 .Map{
     max-width: 1000px;
@@ -172,15 +240,14 @@ h3 {
 
     .HorizontalContent .PanelHome {
         flex: 50%;
-        margin: 5px 0;
-        padding: 0;
+        margin: 0px;
         background-color: #ddcfcc;
     }
 }
 
 .HorizontalContent .PanelHome {
     flex: 50%;
-    margin-inline: 5px;
+    margin: 5px;
     background-color: #ddcfcc;
 }
 
@@ -189,11 +256,25 @@ h3 {
 }
 
 .PanelHome .PanelHomeHeader > h1 {
+    margin: 0px;
     padding: 5px;
-    margin: 0;
+}
+
+.PanelHome > p {
+    padding: 5px;
+    margin: 5px;
+}
+
+.HorizontalContent .panel-footer {
+    background-color: #63554d;
+    text-decoration: none;
+    color: #141414;
+
+    padding: 5px;
 }
 
 .HorizontalContent .panel-footer > a {
+    margin-left: auto;
     text-decoration: none;
     color: #141414;
 }
@@ -285,8 +366,8 @@ h3 {
 
 .ResponsiveGallery .column{
     text-align: center;
-    flex: 24.75%;
-    max-width: 24.75%;
+    flex: 33%;
+    max-width: 33%;
 }
 
 .ResponsiveGallery .column > img{
