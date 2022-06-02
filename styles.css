@@ -15,20 +15,24 @@ h1 {
 }
 
 h2 {
+    size-adjust: true;
     font-family: BebasNeue-Regular;
     color: #291c17;
 }
 
 h3 {
+    size-adjust: true;
     font-family: BebasNeue-Regular;
     color: #8e2320;
 }
 
 p {
+    size-adjust: true;
     font-family: Tahoma;
 }
 
 a {
+    size-adjust: true;
     font-family: Tahoma;
 }
 
@@ -170,9 +174,8 @@ a {
 
 /*#region ResponsiveGallery*/
 .SetOrder{
-    max-width: 1000px;
-    margin: 10px auto;   
-    display: flex;
+    flex: 100%;
+    margin: 5px;
 
     background-color: #ddcfcc; 
     text-align: center;
@@ -181,24 +184,22 @@ a {
 }
 
 .SetOrder > form {
-    margin: 10px auto;   
-    display: inline-block;
-
-
-}
-
-.SetOrder>form .FormSection >input{
-
-    background-color: #1d1819;
-    color: #ddcfcc;
-    font-family: Tahoma;
-    padding: 10px;
+    display: block;
+    margin-top: 10px;
 }
 
 .SetOrder > form .FormSection{
     font-size: 20px;
     text-decoration: none;
     font-family: BebasNeue-Regular;
+}
+
+.SetOrder > form .FormSection > input{
+    background-color: #1d1819;
+    color: #ddcfcc;
+    font-family: Tahoma;
+    width: 80%;
+    height: 30px;
 }
 
 .SetOrder >form > input{
@@ -246,7 +247,7 @@ a {
 }
 
 .HorizontalContent .PanelHome {
-    flex: 50%;
+    flex: 100%;
     margin: 5px;
     background-color: #ddcfcc;
 }
@@ -263,6 +264,11 @@ a {
 .PanelHome > p {
     padding: 5px;
     margin: 5px;
+}
+
+.PanelHome .Buttons {
+
+    text-align: center;
 }
 
 .HorizontalContent .panel-footer {
