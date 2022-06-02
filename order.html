@@ -52,26 +52,35 @@
     <h1 style="font-size: 50px;">ASADERO CARBÓN SECO</h1>
 </div>
 
-<div class="SetOrder">
-    <form action="index.html">
+<div class="HorizontalContent">
+    <div class="PanelHome">       
+        <div class="PanelHomeHeader">
+            <h1 style="font-size: 20px; text-align: center;">HAZ TU PEDIDO</h1>
+        </div>        
+         <p style="font-size: 16px; text-align: center;">¿Estas antojado de pollo?<br>Realiza tu pedido y esperalo en menos de 30 minutos</p> 
+         <div class="Buttons">
+            <a href="https://api.whatsapp.com/send?phone=573152901418" target="_blank"> <img alt="whatsapp" src="Images/IconWhatsapp.png" width="60" height="60"> </a>
+         </div>        
+         <p style="font-size: 16px; text-align: center;">Realiza tu pedido por whatsapp</p> 
+    </div>
+    <div class="SetOrder">
+        <form action="index.html">
+            <div class="FormSection">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" value=""><br><br>
 
-        <div class="FormSection">
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name" value=""><br><br>
-        </div>
-        <div class="FormSection">
-            <label for="email">Correo electronico:</label><br>
-            <input type="text" id="email" name="email" value=""><br><br>
-        </div>
-        <div class="FormSection">
-            <label for="phone">Número de teléfono:</label><br>
-            <input type="text" id="phone" name="phone" value=""><br><br>
-        </div>
-     <input type="submit" value="Solicitar"> 
-    </form>
-    <form action="">
+                <label for="phone">Dirección:</label><br>
+                <input type="text" id="phone" name="phone" value=""><br><br>
 
-    </form>
+                <label for="email">Correo electronico:</label><br>
+                <input type="text" id="email" name="email" value=""><br><br>
+
+                <label for="phone">Número de teléfono:</label><br>
+                <input type="text" id="phone" name="phone" value=""><br><br>
+            </div>
+         <input type="submit" value="Solicitar Pedido"> 
+        </form>
+    </div>    
 </div>
 </div>
 </body>
